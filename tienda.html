@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+
+    <link rel="stylesheet" href="./tienda.css">
+
+
+    <style>
+        .grid-container>* {
+            text-align: center;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: white;
+        }
+
+        .navbar {
+            grid-area: navbar;
+            background-color: white;
+        }
+
+        .division {
+            grid-area: division;
+            background-color: white;
+        }
+
+        .articulo {
+            grid-area: articulo;
+            background: linear-gradient(to bottom right, #153448, #91b5cd);
+           
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgba(245, 245, 245, 0.897);
+        }
+
+        /*Vista para el telefono*/
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto;
+            grid-template-areas:
+                "header"
+                "navbar"
+                "division"
+                "articulo"
+                "footer"
+
+            ;
+        }
+
+
+
+        /*Vista para tablet*/
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: auto;
+                grid-template-areas:
+                    "header header"
+                    "navbar navbar"
+                    "division division"
+                    "articulo articulo"
+                    "footer footer";
+
+            }
+        }
+
+        @media(min-width:900px) {
+            .grid-container {
+                grid-template-columns: auto;
+                grid-template-areas:
+                    "navbar navbar navbar"
+                    "header header header"
+                    "division division division"
+                    "articulo articulo articulo"
+                    "footer footer footer";
+            }
+        }
+
+        .tittle {
+            color: #153448;
+            font-size: 2.5rem;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .tittle-dos {
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+
+</head>
+
+<body class="grid-container">
+    <header class="header">
+        <h2 class="cine-plus">🍿CinePlus🍿</h2>
+        
+
+            <nav class="navbar">
+                <a href="./index.html">Inicio</a>
+                <a href="./formulario.html " target="_blank">Entradas</a>
+                <a href="./tienda.html" target="_blank">Tienda</a>
+            </nav>
+
+    </header>
+   
+
+   
+
+    <div class="division">
+        <h1 class="tittle">Conoce nuestros combos</h1>
+
+        <div class="combos">
+
+
+            <div class="detalle-combo">
+                <img src="./imagenes/COMBO-TRADICIONAL.png" alt="">
+                <h2>Combo tradicional</h2>
+                <p>1 Palomitas Grandes Clásicas + 2 Refrescos Grandes</p>
+                <p class="precio">$169</p>
+                <button class="boton">Comprar</button>
+            </div>
+
+            <div class="detalle-combo">
+                <img src="./imagenes/COMBO-GRANDE.png" alt="">
+                <h2>Combo grande</h2>
+                <p> 1 Palomitas Grandes Clásicas + 1 Refresco Gde. + 1 pza Milky Way 48g o 1 pza Snickers 48g</p>
+                <p class="precio">$199</p>
+                <button class="boton">Comprar</button>
+            </div>
+
+            <div class="detalle-combo">
+                <img src="./imagenes/COMBO-NACHOS-MUNDET.png" alt="">
+                <h2>Combo nachos</h2>
+                <p> 1 Palomitas Grandes Clásicas + 1 Refresco Gde. + 1 Nachos Clásicos</p>
+                <p class="precio">$249</p>
+                <button class="boton">Comprar</button>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <article class="articulo">
+        
+        <h1 class="tittle-dos">No olvides llevarte un recuerdo</h1>
+       
+        <div class="caja-souvenir">
+
+            <div class="souvenir-uno">
+            <img class="img-souvenir" src="./imagenes/BABY YODA.jpg" alt="">
+            <h2>Peluche Baby Yoda. Edición especial </h2>
+            <h3>Características principales</h3>
+            <p class="caracteristicas"> 
+                Marca: STAR WARS <br>
+                Modelo #: GWD85 <br>
+                Personaje: baby yoda <br>
+                Jugadores: 1 <br>
+                Medidas (largo x ancho x alto): 28 cm de altura <br> </p>
+                <p class="precio">$699</p>
+                <button class="boton">Comprar</button>
+
+            </div>
+
+            <div class="souvenir-uno">
+                <img class="img-souvenir" src="./imagenes/MALORIAN.jpg" alt="">
+                <h2>Peluche Mandalorian Mattel Star Wars</h2>
+                <h3>Características principales</h3>
+                <p class="caracteristicas"> 
+                    Marca: STAR WARS <br>
+                    Modelo #: HNH66<br>
+                    Personaje: malorian <br>
+                    Jugadores: 1 <br>
+                    Medidas (largo x ancho x alto): 35 cm de altura <br> </p>
+                    <p class="precio">$559</p>
+                    <button class="boton">Comprar</button>
+                </div>
+          
+                <div class="souvenir-uno">
+                    <img class="img-souvenir" src="./imagenes/DARTH VADER.jpg" alt="">
+                    <h2>Figura de acción de Darth Vader</h2>
+                    <h3>Características principales</h3>
+                    <p class="caracteristicas"> 
+                        Marca: STAR WARS <br>
+                        Modelo #: HPK96<br>
+                        Personaje: Darth Vader<br>
+                        Jugadores: 1 <br>
+                        Medidas (largo x ancho x alto): 38 cm de altura <br> </p>
+                        <p class="precio">$769</p>
+                        <button class="boton">Comprar</button>
+
+                    </div>
+
+                </div>
+
+
+
+    </article>
+    <footer class="footer">&#169;Todos los derechos reservados al equipo 11 de la CH41 de Generation</footer>
+
+
+
+
+</body>
+
+</html>

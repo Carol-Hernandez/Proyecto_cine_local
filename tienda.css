@@ -1,0 +1,177 @@
+* {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+   background: linear-gradient(to bottom right, #153448, #91b5cd);
+   position: fixed;
+   /*POCISIÓN*/
+   width: 99%;
+   margin: 0 auto;
+   top: 0;
+   /* Hace que l header quede sin espacio en la parte superior*/
+   z-index: 2;
+   border-radius: 20px;
+   height: 62px;
+}
+
+.header nav {
+   height: 20px;
+   background-color: rgba(245, 245, 245, 0.897);
+   text-align: center;
+   /*TEXT ALING */
+   padding: 20px;
+   word-spacing: 20px;
+   border-radius: 20px;
+   left: 0px;
+   
+
+}
+
+a {
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+   font-weight: bold;
+   left: 0px;
+
+}
+
+a:hover {
+
+   background-color: #f03030;
+
+   border-radius: 5px;
+   padding: 10px;
+}
+
+a:active {
+
+   color: whitesmoke;
+
+}
+
+.division {
+   margin-top: 100px;
+
+}
+
+.combos {
+   display: flex;
+   flex-wrap: wrap;
+   /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+   justify-content: space-between;
+   /* Espaciado uniforme entre elementos */
+   /* Color de fondo del contenedor */
+   align-items: center;
+   /*USO DE ALING ITEMS*/
+   padding: 10px;
+   border-radius: 10px;
+
+}
+
+.detalle-combo {
+   flex-basis: 30%;
+   /* Tamaño base del 30% del ancho del contenedor */
+   flex-grow: 1;
+   /*Permite que el elemento creza si hay espacio disponible*/
+   flex-shrink: 1;
+   /* USO DE FLEX-SHRINK PARA QUE EL ELEMENTO SE ENCOJA SI ES NECESARIO */
+   background-color: #153448;
+   /* Color de fondo del elemento */
+   color: white;
+   padding: 20px;
+   margin: 10px;
+   text-align: center;
+   box-sizing: border-box;
+   /*USO DE BOX-SIZING*/
+   width: 100%;
+   border-radius: 10px;
+   outline: thick double #32a1ce; /*OUTLINE*/
+}
+
+
+
+.caja-souvenir {
+
+
+   display: flex;
+   flex-wrap: wrap;
+   /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+   justify-content: space-between;
+   /* Espaciado uniforme entre elementos */
+   background-color:  #153448;
+   /* Color de fondo del contenedor */
+   align-items: center;
+   /*USO DE ALING ITEMS*/
+   padding: 10px;
+   border-radius: 10px;
+
+   
+
+
+
+
+
+}
+
+.img-souvenir {
+   margin: 6px auto;
+   width: 50%;
+  
+
+
+}
+
+.souvenir-uno {
+
+
+   flex-basis: 30%;
+   /* Tamaño base del 30% del ancho del contenedor */
+   flex-grow: 1;
+   /*Permite que el elemento creza si hay espacio disponible*/
+   flex-shrink: 1;
+   /* USO DE FLEX-SHRINK PARA QUE EL ELEMENTO SE ENCOJA SI ES NECESARIO */
+   background: whitesmoke;
+   color: #153448;
+   padding: 20px;
+   margin: 10px;
+   text-align: center;
+   box-sizing: border-box;
+   /*USO DE BOX-SIZING*/
+   width: 98%;
+   border-radius: 10px;
+   outline: thick double #32a1ce; /*OUTLINE*/
+
+}
+
+.caracteristicas {
+   overflow: auto;
+   /*SE USA OVERFLOW*/
+   height: 50px;
+
+}
+
+.precio {
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+
+.boton{
+   background-color: #e74c3c;
+   color: white;
+   padding: 15px 30px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+
+
+}
+
+footer {
+   font-weight: bold;
+   text-align: center;
+   background-color: rgba(245, 245, 245, 0.897);
+
+}

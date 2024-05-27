@@ -1,0 +1,90 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    /*background-color: #f03030;*/
+    background: linear-gradient(to bottom right, #153448, #91b5cd);
+    margin: 10px;
+    padding: 10px;
+}
+
+
+header {
+    grid-area: header;
+    background-color: #153448;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+header img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.5; /*aQUI SE APLICA LA OPACIDAD */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.division {
+    grid-area: division;
+
+}
+
+fieldset {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+form {
+    align-items: left; /*AQUI SE APlICA ALING ITEMS*/
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #f03030;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0c263b;
+}
+.grid-container>* {
+    align-content: center; /*AQUI SE APLICA ALING CONTENT */
+    border-radius: 15px;
+    padding: 10px;
+}
+
