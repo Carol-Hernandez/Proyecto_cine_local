@@ -1,7 +1,7 @@
 # Proyecto_cine_local
 Este respositorio contiene el proyecto de Cine local utilizando HTML y CSS
 
-#Especificaciones 
+# Especificaciones 
 Box sizzing.- El box sizing se aplica con border box. Esta aplicación se ve reflejada en la parte de Estrenos en donde se ve expuesta la cartelera y tambien en la sección de combos y de souvenirs dentro de la pagina de la tienda. 
 Outline.-  El outline, se aplico con los parametros de "thick double #32a1ce" para obtener un efecto de doble linea color azul claro en la tabla de horarios y en cada una de las cards que estan en la sección de combos y de souvenir de la pagina de tienda. 
 Posicionamiento.- Para la parte de encabezados en la pagina principal y en la pagina de tienda, se aplico "position: fixed" para lograr para que el elemento quedara fijado. 
